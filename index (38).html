@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ghosh Bari Park Bot | Privacy Policy</title>
+<meta name="description" content="Privacy Policy for Ghosh Bari Park Bot, an independent Telegram guide bot for Ghosh Bari Park, Gulai Chandi, Basirhat, West Bengal. Learn what information may be processed, why, and how to contact the developer.">
+<meta name="theme-color" content="#123824">
+<meta name="color-scheme" content="light dark">
+<meta name="robots" content="index, follow">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; script-src 'unsafe-inline'; img-src data:; base-uri 'none'; form-action 'none'">
+
+<!-- Open Graph. og:url and the canonical link are filled in by the script below
+     (from CONFIG.PUBLIC_URL or the page's own address). After deployment you may also
+     paste your real public URL into the og:url content attribute for crawlers that do not run JavaScript. -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Ghosh Bari Park Bot">
+<meta property="og:title" content="Ghosh Bari Park Bot | Privacy Policy">
+<meta property="og:description" content="How the independent Ghosh Bari Park Telegram bot may handle your information, and the choices you have.">
+<meta property="og:url" id="og-url" content="">
+<meta name="twitter:card" content="summary">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23123824'/%3E%3Cpath d='M32 10l18 7v13c0 11-8 19-18 24-10-5-18-13-18-24V17z' fill='none' stroke='%23d4a843' stroke-width='3' stroke-linejoin='round'/%3E%3Cpath d='M32 45c-7-4-10-9-10-14 0-4 3-8 10-12 7 4 10 8 10 12 0 5-3 10-10 14z' fill='%23f1f7f2'/%3E%3C/svg%3E">
+
+<script>
+/* Runs before first paint: picks the saved or system theme so the page never flashes the wrong colours.
+   Nothing is written to storage here; the preference is saved only when the visitor presses the theme button. */
+(function () {
+  var t = null;
+  try { t = localStorage.getItem('gbp-theme'); } catch (e) {}
+  if (t !== 'light' && t !== 'dark') {
+    t = (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) ? 'dark' : 'light';
+  }
+  var d = document.documentElement;
+  d.setAttribute('data-theme', t);
+  d.classList.add('js');
+})();
+</script>
+
+<style>
+:root{
+  --serif:"Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif;
+  --sans:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --bg:#f3f8f4; --surface:#ffffff; --surface-2:#e8f2ec; --ink:#1c2822; --muted:#46564d; --line:#d2dfd6;
+  --link:#145a37; --btn-bg:#1b6a43; --btn-ink:#ffffff;
+  --gold:#b58a22; --gold-ink:#6e510c;
+  --hero-bg:#123824; --hero-ink:#f1f7f2; --hero-muted:#bcd2c4; --hero-gold:#d9b45a;
+  --shadow:0 1px 2px rgba(16,40,28,.06),0 4px 14px rgba(16,40,28,.05);
+  --radius:10px; --header-h:60px;
+}
+[data-theme="dark"]{
+  --bg:#0e1712; --surface:#16211a; --surface-2:#1d2d23; --ink:#e7efe9; --muted:#a8b9ae; --line:#2b3b31;
+  --link:#7fd9a3; --btn-bg:#6fcf97; --btn-ink:#0b1710;
+  --gold:#d4a843; --gold-ink:#e6c36e;
+  --hero-bg:#0b1c12; --hero-ink:#eef5f0; --hero-muted:#a9c2b1; --hero-gold:#d4a843;
+  --shadow:0 1px 2px rgba(0,0,0,.4);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--header-h) + 16px);-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.7 var(--sans);overflow-wrap:break-word}
+h1,h2,h3{font-family:var(--serif);line-height:1.25;margin:0}
+a{color:var(--link);text-underline-offset:3px}
+a:hover{text-decoration-thickness:2px}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px;border-radius:4px}
+[hidden]{display:none!important}
+body:focus{outline:none}
+html:not(.js) .js-only{display:none!important}
+.wrap{width:100%;max-width:1180px;margin:0 auto;padding:0 20px}
+.skip{position:absolute;left:12px;top:-60px;background:var(--btn-bg);color:var(--btn-ink);padding:10px 16px;border-radius:8px;z-index:100;font-weight:600;text-decoration:none}
+.skip:focus{top:10px}
+svg.i{width:20px;height:20px;flex:none;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+
+/* reading progress */
+.progress{position:fixed;inset:0 0 auto 0;height:3px;z-index:80;background:transparent;pointer-events:none}
+.progress div{height:100%;background:var(--gold);transform:scaleX(0);transform-origin:left}
+
+/* header */
+.site-header{position:sticky;top:0;z-index:60;height:var(--header-h);background:var(--surface);border-bottom:1px solid var(--line)}
+.site-header .wrap{height:100%;display:flex;align-items:center;gap:10px}
+.brand{display:flex;align-items:center;gap:10px;color:var(--ink);text-decoration:none;min-width:0;font:700 1.02rem/1.2 var(--serif)}
+.brand svg.mark{width:34px;height:34px;color:var(--btn-bg);flex:none}
+.brand small{display:block;font:500 .78rem/1.3 var(--sans);color:var(--muted)}
+.grow{flex:1}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:9px 16px;border-radius:8px;border:1px solid var(--line);background:var(--surface);color:var(--ink);font:600 .92rem/1.2 var(--sans);text-decoration:none;cursor:pointer}
+.btn:hover{border-color:var(--btn-bg)}
+.btn-primary{background:var(--btn-bg);color:var(--btn-ink);border-color:transparent}
+.btn-primary:hover{filter:brightness(1.08);border-color:transparent}
+.btn-ghost{background:transparent;color:var(--hero-ink);border-color:rgba(255,255,255,.4)}
+.btn-ghost:hover{border-color:var(--hero-gold);background:rgba(255,255,255,.06)}
+.btn-sm{min-height:38px;padding:6px 12px;font-size:.86rem}
+.icon-btn{width:44px;padding:0}
+#theme-toggle .sun{display:none}
+[data-theme="dark"] #theme-toggle .sun{display:block}
+[data-theme="dark"] #theme-toggle .moon{display:none}
+#menu-btn{display:none}
+
+/* hero */
+.hero{background:var(--hero-bg);color:var(--hero-ink);padding:44px 0 50px;border-bottom:3px solid var(--hero-gold)}
+.hero-grid{display:grid;gap:34px;align-items:center}
+.hero svg.mark{width:52px;height:52px;color:var(--hero-gold)}
+.hero h1{font-size:clamp(1.75rem,4.2vw,2.55rem);margin:14px 0 12px;letter-spacing:-.01em}
+.hero .lead{color:var(--hero-muted);max-width:54ch;margin:0 0 22px}
+.hero-actions{display:flex;flex-wrap:wrap;gap:10px}
+.hero .btn-primary{background:var(--hero-gold);color:#14210f}
+.signboard{list-style:none;margin:0;padding:22px 24px;border:1px solid var(--hero-gold);box-shadow:inset 0 0 0 4px var(--hero-bg),inset 0 0 0 5px rgba(217,180,90,.5);background:rgba(255,255,255,.04);border-radius:6px;display:grid;gap:16px}
+.signboard li{display:grid;grid-template-columns:24px 1fr;gap:12px;align-items:start}
+.signboard svg.i{color:var(--hero-gold);margin-top:3px}
+.signboard strong{display:block;font:700 1rem/1.35 var(--serif)}
+.signboard span{display:block;color:var(--hero-muted);font-size:.93rem;line-height:1.5}
+
+/* layout */
+.layout{display:grid;gap:28px;padding:34px 0 60px}
+.sidebar{min-width:0}
+main{min-width:0}
+.lbl{font:700 .82rem/1.3 var(--sans);color:var(--muted);margin:0 0 8px}
+.search{margin-bottom:20px}
+.search-field{position:relative;display:flex;align-items:center}
+.search-field svg.i{position:absolute;left:12px;color:var(--muted);pointer-events:none}
+.search-field input{width:100%;min-height:44px;padding:9px 40px 9px 40px;border:1px solid var(--line);border-radius:8px;background:var(--surface);color:var(--ink);font:inherit;font-size:.95rem}
+.search-field input::placeholder{color:var(--muted);opacity:.85}
+.search-field .clear{position:absolute;right:4px;width:36px;height:36px;border:0;background:transparent;color:var(--muted);cursor:pointer;border-radius:6px;display:flex;align-items:center;justify-content:center}
+.status{min-height:1.4em;margin:6px 0 0;font-size:.86rem;color:var(--muted)}
+#toc-list{list-style:none;margin:0;padding:0;counter-reset:toc}
+#toc-list li{counter-increment:toc}
+#toc-list a{display:grid;grid-template-columns:28px 1fr;gap:6px;padding:7px 10px;border-left:3px solid transparent;color:var(--ink);text-decoration:none;font-size:.93rem;line-height:1.4;border-radius:0 6px 6px 0}
+#toc-list a::before{content:counter(toc);color:var(--muted);font-variant-numeric:tabular-nums}
+#toc-list a:hover{background:var(--surface-2)}
+#toc-list a[aria-current="true"]{border-left-color:var(--gold);background:var(--surface-2);font-weight:700}
+
+.noscript{background:var(--surface-2);border-bottom:1px solid var(--line);padding:10px 20px;font-size:.9rem;text-align:center}
+.updated{display:inline-flex;align-items:center;gap:8px;margin:0 0 6px;font-size:.92rem;color:var(--muted)}
+.intro-note{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:var(--radius);padding:14px 18px;margin:12px 0 18px;box-shadow:var(--shadow);font-size:.97rem}
+.intro-note p{margin:0}
+.toolbar{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 16px}
+
+/* policy sections */
+.sec{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);margin:0 0 12px;box-shadow:var(--shadow)}
+.sec summary{display:flex;align-items:center;gap:14px;padding:15px 18px;cursor:pointer;list-style:none;border-radius:var(--radius)}
+.sec summary::-webkit-details-marker{display:none}
+.sec summary:hover{background:var(--surface-2)}
+.sec .num{flex:none;width:34px;height:34px;border-radius:50%;border:1.5px solid var(--gold);display:grid;place-items:center;font:700 .9rem/1 var(--sans);color:var(--gold-ink);font-variant-numeric:tabular-nums}
+.sec h2{flex:1;font-size:1.22rem}
+.sec .chev{color:var(--muted);transition:transform .2s}
+.sec details[open] .chev{transform:rotate(180deg)}
+.sec .body{padding:2px 22px 22px 66px}
+.body>*:first-child{margin-top:0}
+.body p,.body li,.body dd{max-width:68ch}
+.body p{margin:0 0 14px}
+.body h3{font-size:1.06rem;margin:24px 0 8px}
+.body ul{margin:0 0 14px;padding-left:1.2em}
+.body li{margin:0 0 6px}
+.body li::marker{color:var(--gold)}
+.note{background:var(--surface-2);border-left:4px solid var(--btn-bg);border-radius:0 8px 8px 0;padding:12px 16px;margin:0 0 16px}
+.note.warn{border-left-color:var(--gold)}
+.note p{margin:0}
+.note p+p{margin-top:8px}
+.note strong{font-family:var(--serif)}
+.body dl{margin:0 0 14px}
+.body dt{font:700 1rem/1.4 var(--serif);margin-top:14px}
+.body dd{margin:2px 0 0;color:var(--ink)}
+mark.hl{background:#ffe08a;color:#1c2822;border-radius:3px;padding:0 2px}
+.empty{background:var(--surface);border:1px dashed var(--line);border-radius:var(--radius);padding:24px;text-align:center;color:var(--muted)}
+
+/* pricing */
+.cards{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));margin:12px 0 18px}
+.price-card{background:var(--bg);border:1px solid var(--line);border-top:4px solid var(--btn-bg);border-radius:var(--radius);padding:18px;display:flex;flex-direction:column;gap:6px}
+.price-card.total{border-top-color:var(--gold)}
+.price-card h4{margin:0;font:700 1.02rem/1.3 var(--serif)}
+.price-card .cfg{margin:0;color:var(--muted);font-size:.93rem;line-height:1.5}
+.price-card .amt{font:700 1.6rem/1.2 var(--serif);margin:8px 0 0}
+.price-card .amt small{font:500 .9rem var(--sans);color:var(--muted)}
+.price-card .inr{margin:0;color:var(--muted);font-size:.93rem}
+.price-card .btn{margin-top:auto;align-self:flex-start}
+.price-card .spacer{height:8px}
+.badge{display:inline-flex;align-self:flex-start;align-items:center;gap:6px;font:700 .78rem/1.2 var(--sans);color:var(--gold-ink);border:1px solid var(--gold);border-radius:999px;padding:3px 10px;margin-bottom:6px}
+.table-wrap{overflow-x:auto;margin:0 0 14px;max-width:100%}
+table{border-collapse:collapse;width:100%;font-size:.95rem}
+caption{text-align:left;font-weight:700;padding:0 0 8px;font-family:var(--serif)}
+th,td{padding:9px 12px;border-bottom:1px solid var(--line);text-align:left;white-space:nowrap}
+thead th{background:var(--surface-2)}
+tbody th{font-weight:600}
+
+/* contact */
+.contact-card{background:var(--bg);border:1px solid var(--line);border-radius:var(--radius);padding:6px 18px 16px;margin:0 0 14px}
+.contact-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+
+/* footer */
+.site-footer{background:var(--hero-bg);color:var(--hero-muted);padding:34px 0 40px;border-top:3px solid var(--hero-gold);font-size:.93rem}
+.site-footer a{color:var(--hero-ink)}
+.site-footer .cols{display:grid;gap:22px}
+.site-footer h2{font-size:1.05rem;color:var(--hero-ink);margin-bottom:8px}
+.site-footer ul{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+.site-footer p{margin:0 0 8px;max-width:62ch}
+@media(min-width:760px){.site-footer .cols{grid-template-columns:1.3fr 1fr}}
+
+/* floating bits */
+.to-top{position:fixed;right:18px;bottom:18px;z-index:55;width:46px;height:46px;border-radius:50%;border:0;background:var(--btn-bg);color:var(--btn-ink);display:grid;place-items:center;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.25);opacity:0;visibility:hidden;transform:translateY(8px);transition:opacity .2s,transform .2s,visibility .2s}
+.to-top.show{opacity:1;visibility:visible;transform:none}
+.toast{position:fixed;left:50%;bottom:24px;z-index:90;transform:translate(-50%,20px);max-width:min(92vw,520px);background:#16211a;color:#f1f7f2;border:1px solid var(--hero-gold);padding:11px 18px;border-radius:8px;font-size:.93rem;opacity:0;visibility:hidden;transition:opacity .2s,transform .2s,visibility .2s;text-align:center;overflow-wrap:anywhere}
+.toast.show{opacity:1;visibility:visible;transform:translate(-50%,0)}
+.scrim{display:none}
+
+/* wide screens: sticky sidebar */
+@media(min-width:960px){
+  .layout{grid-template-columns:270px minmax(0,1fr);gap:44px}
+  .sidebar{position:sticky;top:calc(var(--header-h) + 18px);align-self:start;max-height:calc(100vh - var(--header-h) - 36px);max-height:calc(100dvh - var(--header-h) - 36px);overflow:auto;padding-right:6px}
+  .hero-grid{grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr)}
+}
+/* small screens: contents + search become a drawer when JavaScript is available */
+@media(max-width:959.98px){
+  .js #menu-btn{display:inline-flex}
+  .js .sidebar{position:fixed;left:0;right:0;top:var(--header-h);z-index:58;max-height:calc(100vh - var(--header-h));max-height:calc(100dvh - var(--header-h));overflow:auto;background:var(--surface);border-bottom:1px solid var(--line);padding:18px 20px 22px;transform:translateY(-8px);opacity:0;visibility:hidden;transition:opacity .18s,transform .18s,visibility .18s;box-shadow:0 12px 30px rgba(0,0,0,.18)}
+  .js .sidebar.open{transform:none;opacity:1;visibility:visible}
+  .js .scrim.open{display:block;position:fixed;inset:var(--header-h) 0 0 0;z-index:57;background:rgba(10,20,14,.45)}
+  .sidebar{border-bottom:1px solid var(--line);padding-bottom:12px}
+  .brand small{display:none}
+}
+@media(max-width:640px){
+  .wrap{padding:0 16px}
+  .sec .body{padding:2px 16px 20px 16px}
+  .sec summary{padding:13px 14px;gap:11px}
+  .sec h2{font-size:1.08rem}
+  .hero{padding:32px 0 38px}
+  #menu-btn .txt{display:none}
+  #menu-btn{width:44px;padding:0}
+  .hero-actions .btn{flex:1 1 100%}
+}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition-duration:.01ms!important;animation-duration:.01ms!important}
+}
+
+/* print */
+@media print{
+  body{background:#fff;color:#000;font-size:11pt}
+  .site-header,.progress,.sidebar,.scrim,.to-top,.toast,.toolbar,.hero-actions,.js-only,.noscript,.contact-actions,.chev{display:none!important}
+  .layout{display:block;padding:12pt 0}
+  .hero,.site-footer{background:#fff;color:#000;border-color:#000;padding:12pt 0}
+  .hero *,.site-footer *{color:#000!important}
+  .signboard{box-shadow:none;border-color:#000}
+  .sec,.price-card,.note,.intro-note{box-shadow:none;border-color:#999;break-inside:avoid-page}
+  .sec .body{padding-left:16pt}
+  a{color:#000}
+  .body a[href^="http"]::after,.site-footer a[href^="http"]::after{content:" (" attr(href) ")";font-size:9pt;overflow-wrap:anywhere}
+  mark.hl{background:none}
+}
+</style>
+</head>
+<body id="top" tabindex="-1">
+
+<!-- Icon sprite: all icons are inline SVG, no external requests -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="i-mark" viewBox="0 0 64 64"><path d="M32 6l20 8v15c0 12-8.5 21-20 27C20.500 50 12 41 12 29V14z" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/><path d="M32 46c-7.500-4.500-11-10-11-15.500 0-4.500 3.500-9 11-13.500 7.500 4.500 11 9 11 13.500C43 36 39.500 41.500 32 46z" fill="currentColor"/><path d="M32 46V27" stroke="#123824" stroke-width="2" stroke-linecap="round" fill="none"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.500-3.500"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.900 4.900l1.400 1.400M17.700 17.700l1.400 1.400M4.900 19.100l1.400-1.400M17.700 6.300l1.400-1.400"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20 14.500A8 8 0 019.500 4 8 8 0 1020 14.500z"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 012-2h9"/></symbol>
+    <symbol id="i-chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></symbol>
+    <symbol id="i-up" viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></symbol>
+    <symbol id="i-ext" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 01-1 1H5a1 1 0 01-1-1V7a1 1 0 011-1h5"/></symbol>
+    <symbol id="i-send" viewBox="0 0 24 24"><path d="M21 3L3 10.500l6.500 2.500L12 20l3-5.500L21 3zM9.500 13L21 3"/></symbol>
+    <symbol id="i-print" viewBox="0 0 24 24"><path d="M7 9V3h10v6M7 17H5a1 1 0 01-1-1v-5a2 2 0 012-2h12a2 2 0 012 2v5a1 1 0 01-1 1h-2"/><rect x="7" y="14" width="10" height="7"/></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 018 0v3"/></symbol>
+    <symbol id="i-eyeoff" viewBox="0 0 24 24"><path d="M3 3l18 18M10.600 6.100A9.800 9.800 0 0112 6c5 0 8.500 4.200 9.500 6a14 14 0 01-3.200 3.700M6.600 7.600A14 14 0 002.500 12c1 1.800 4.500 6 9.500 6a9.500 9.500 0 004-.9M9.900 9.900a3 3 0 004.200 4.200"/></symbol>
+    <symbol id="i-flag" viewBox="0 0 24 24"><path d="M5 21V4M5 4h11l-2 4 2 4H5"/></symbol>
+    <symbol id="i-server" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="7" rx="2"/><rect x="3" y="13" width="18" height="7" rx="2"/><path d="M7 7.500h.01M7 16.500h.01"/></symbol>
+    <symbol id="i-cloud" viewBox="0 0 24 24"><path d="M7 18a4 4 0 01-.5-8A6 6 0 0118 11a3.500 3.500 0 01-.5 7H7z"/></symbol>
+    <symbol id="i-cal" viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 10h16M9 3v4M15 3v4"/></symbol>
+  </defs>
+</svg>
+
+<div class="progress" aria-hidden="true"><div id="progress-bar"></div></div>
+<a class="skip" href="#policy">Skip to the policy</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Ghosh Bari Park Bot privacy policy, back to top">
+      <svg class="mark" aria-hidden="true"><use href="#i-mark"/></svg>
+      <span>Ghosh Bari Park Bot<small>Privacy Policy</small></span>
+    </a>
+    <span class="grow"></span>
+    <button type="button" id="menu-btn" class="btn js-only" aria-expanded="false" aria-controls="sidebar" aria-label="Contents and search">
+      <svg class="i" aria-hidden="true"><use href="#i-menu"/></svg><span class="txt" aria-hidden="true">Contents &amp; search</span>
+    </button>
+    <button type="button" id="theme-toggle" class="btn icon-btn js-only" aria-pressed="false" aria-label="Dark theme">
+      <svg class="i moon" aria-hidden="true"><use href="#i-moon"/></svg>
+      <svg class="i sun" aria-hidden="true"><use href="#i-sun"/></svg>
+    </button>
+  </div>
+</header>
+
+<noscript><div class="noscript">JavaScript is turned off. The full policy below is still readable. Search, the theme button and the copy buttons need JavaScript.</div></noscript>
+
+<section class="hero" aria-labelledby="page-title">
+  <div class="wrap hero-grid">
+    <div>
+      <svg class="mark" aria-hidden="true"><use href="#i-mark"/></svg>
+      <h1 id="page-title">Privacy Policy for Ghosh Bari Park Bot</h1>
+      <p class="lead">What the Telegram guide bot for Ghosh Bari Park, Gulai Chandi, Basirhat, may do with your information, why, and what you can ask of us.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#policy">Read the policy</a>
+        <button type="button" class="btn btn-ghost js-only" data-copy="policy"><svg class="i" aria-hidden="true"><use href="#i-copy"/></svg>Copy policy link</button>
+        <button type="button" class="btn btn-ghost js-only" data-copy="contact"><svg class="i" aria-hidden="true"><use href="#i-copy"/></svg>Copy contact link</button>
+      </div>
+    </div>
+    <ul class="signboard" aria-label="Summary of this policy">
+      <li><svg class="i" aria-hidden="true"><use href="#i-flag"/></svg><div><strong>Independent project</strong><span>Built and run by the developer, Sahin. Not an official park service.</span></div></li>
+      <li><svg class="i" aria-hidden="true"><use href="#i-server"/></svg><div><strong>Infrastructure is planned</strong><span>The hosting and storage budget in Section 5 is an estimate, not proof of purchase or deployment.</span></div></li>
+      <li><svg class="i" aria-hidden="true"><use href="#i-eyeoff"/></svg><div><strong>No tracking on this website</strong><span>No cookies, analytics, advertising trackers or third-party scripts.</span></div></li>
+      <li><svg class="i" aria-hidden="true"><use href="#i-cal"/></svg><div><strong>Last updated <time datetime="2026-10-13">13 October 2026</time></strong><span>Updates are published on this page.</span></div></li>
+    </ul>
+  </div>
+</section>
+
+<div class="wrap layout">
+  <aside class="sidebar" id="sidebar" aria-label="Policy navigation">
+    <div class="search js-only">
+      <label for="search" class="lbl">Search this policy</label>
+      <div class="search-field">
+        <svg class="i" aria-hidden="true"><use href="#i-search"/></svg>
+        <input id="search" type="search" placeholder="Try: photos, retention, Telegram" autocomplete="off" spellcheck="false">
+        <button type="button" id="search-clear" class="clear" aria-label="Clear search" hidden><svg class="i" aria-hidden="true"><use href="#i-x"/></svg></button>
+      </div>
+      <p id="search-status" class="status" role="status" aria-live="polite"></p>
+    </div>
+    <nav aria-label="Table of contents">
+      <p class="lbl">Contents</p>
+      <ol id="toc-list">
+        <li><a href="#s1">Introduction</a></li>
+        <li><a href="#s2">Information We May Process</a></li>
+        <li><a href="#s3">Purposes of Processing</a></li>
+        <li><a href="#s4">Legal Basis and User Choices</a></li>
+        <li><a href="#s5">Hosting and Cloud Storage</a></li>
+        <li><a href="#s6">Storage Architecture</a></li>
+        <li><a href="#s7">Data Security</a></li>
+        <li><a href="#s8">Sharing and Disclosure</a></li>
+        <li><a href="#s9">Public Posts and Media</a></li>
+        <li><a href="#s10">Cookies and Tracking</a></li>
+        <li><a href="#s11">Data Retention</a></li>
+        <li><a href="#s12">Data Access and Deletion Requests</a></li>
+        <li><a href="#s13">Children's Privacy</a></li>
+        <li><a href="#s14">International Data Processing</a></li>
+        <li><a href="#s15">Third-Party Links and Services</a></li>
+        <li><a href="#s16">Incident Response</a></li>
+        <li><a href="#s17">Policy Updates</a></li>
+        <li><a href="#s18">Contact Information</a></li>
+        <li><a href="#s19">Independent Project Disclaimer</a></li>
+        <li><a href="#s20">Policy Accuracy</a></li>
+      </ol>
+    </nav>
+  </aside>
+  <div class="scrim" id="scrim"></div>
+
+  <main id="policy" tabindex="-1">
+    <p class="updated"><svg class="i" aria-hidden="true"><use href="#i-cal"/></svg>Last updated: <time datetime="2026-10-13">13 October 2026</time></p>
+    <div class="intro-note">
+      <p><strong>How to read this policy.</strong> Words such as "may", "if enabled" and "planned" are deliberate. Which features run, and which data is stored, depends on how the bot is configured at any given time. Nothing here claims that every feature or service is already live.</p>
+    </div>
+    <div class="toolbar js-only">
+      <button type="button" class="btn btn-sm" id="expand-all">Expand all</button>
+      <button type="button" class="btn btn-sm" id="collapse-all">Collapse all</button>
+      <button type="button" class="btn btn-sm" id="print-btn"><svg class="i" aria-hidden="true"><use href="#i-print"/></svg>Print</button>
+    </div>
+
+    <!-- 1 -->
+    <section class="sec" id="s1" aria-labelledby="h-s1"><details open>
+      <summary><span class="num" aria-hidden="true">1</span><h2 id="h-s1">Introduction</h2><svg class="i chev" aria-hidden="true"><use href="#i-chev"/></svg></summary>
+      <div class="body">
+        <p>Ghosh Bari Park Bot is a Telegram bot created to help people explore and stay informed about Ghosh Bari Park at Gulai Chandi, Basirhat, North 24 Parganas, West Bengal, India. Depending on which features are switched on, it may answer commands, share park information and updates, and let visitors send posts, feedback, reports and suggestions.</p>
+        <p>This Privacy Policy explains what information the bot and this website may process, why, who may see it, how long it may be kept, and what choices you have.</p>
+        <div class="note warn"><p><strong>Independent project.</strong> The bot is developed and run independently by Sahin. It is not an officially authorised service of any park owner, park management or government body unless written authorisation is obtained and stated in this policy.</p></div>
+      </div>
+    </details></section>
+
+    <!-- 2 -->
+    <section class="sec" id="s2" aria-labelledby="h-s2"><details open>
+      <summary><span class="num" aria-hidden="true">2</span><h2 id="h-s2">Information We May Process</h2><svg class="i chev" aria-hidden="true"><use href="#i-chev"/></svg></summary>
+      <div class="body">
+        <p>Depending on the features that are enabled and the code that is deployed, the bot may process the following categories of information:</p>
+        <ul>
+          <li><strong>Telegram identifiers:</strong> your Telegram user ID, first name and username, which Telegram provides to a bot when you interact with it.</li>
+          <li><strong>Commands and messages:</strong> the commands you press or type and the messages you send to the bot.</li>
+          <li><strong>Feedback and suggestions:</strong> text you choose to submit about the park or the bot.</li>
+          <li><strong>Reports and support requests:</strong> problems, complaints or questions you send to the developer or administrators.</li>
+          <li><strong>Media and files:</strong> photos, videos, captions and other files you upload.</li>
+          <li><strong>Profile and post history:</strong> information in a profile, if profiles are enabled, and a record of posts you submit.</li>
+          <li><strong>Administrative and moderation records:</strong> approvals, rejections, warnings, blocks and notes made by administrators or managers.</li>
+          <li><strong>Technical records:</strong> logs, timestamps and error records created while the bot runs.</li>
+        </ul>
+        <p>Telegram does not give bots your phone number by default.</p>
+        <div class="note"><p>This list describes categories that <em>may</em> be processed. It is not a statement that every category is collected today. Actual processing depends on the enabled features and the deployed code.</p></div>
+      </div>
+    </details></section>
+
+    <!-- 3 -->
+    <section class="sec" id="s3" aria-labelledby="h-s3"><details open>
+      <summary><span class="num" aria-hidden="true">3</span><h2 id="h-s3">Purposes of Processing</h2><svg class="i chev" aria-hidden="true"><use href="#i-chev"/></svg></summary>
+      <div class="body">
+        <p>Information may be used to:</p>
+        <ul>
+          <li>respond to your commands and button presses;</li>
+          <li>provide park-related information and updates;</li>
+          <li>receive and manage visitor feedback;</li>
+          <li>handle reports and suggestions;</li>
+          <li>review, manage and, where you ask for it, publish submitted posts;</li>
+          <li>maintain profiles, if that feature is enabled;</li>
+          <li>moderate content and prevent spam or abuse;</li>
+          <li>keep the service secure and fix technical problems;</li>
+          <li>meet legal obligations.</li>
+        </ul>
+        <p>The bot is not intended to use your information for advertising.</p>
+      </div>
+    </details></section>
+
+    <!-- 4 -->
+    <section class="sec" id="s4" aria-labelledby="h-s4"><details open>
+      <summary><span class="num" aria-hidden="true">4</span><h2 id="h-s4">Legal Basis and User Choices</h2><svg class="i chev" aria-hidden="true"><use href="#i-chev"/></svg></summary>
+      <div class="body">
+        <p>Processing must comply with the law that applies to it, which may include India's Digital Personal Data Protection Act, 2023 and its rules as they come into force. Depending on the situation, processing may rest on:</p>
+        <ul>
+          <li><strong>Your consent,</strong> for example when you choose to submit a post, photo or feedback;</li>
+          <li><strong>Legitimate operational purposes,</strong> such as keeping the bot working, preventing spam and protecting its security;</li>
+          <li><strong>Legal obligations,</strong> where the law requires information to be kept or disclosed.</li>
+        </ul>
+        <p>No single basis applies to everything. The basis depends on what the information is and why it is processed.</p>
+        <h3>Your choices</h3>
+        <ul>
+          <li>You can use the bot's basic commands without submitting optional information.</li>
+          <li>You can decide not to send feedback, posts, photos, videos or profile details.</li>
+          <li>You can stop using the bot, or block it, at any time in Telegram.</li>
+          <li>You can ask about access, correction or deletion as described in Section 12.</li>
+        </ul>
+      </div>
+    </details></section>
+
+    <!-- 5 -->
+    <section class="sec" id="s5" aria-labelledby="h-s5"><details open>
+      <summary><span class="num" aria-hidden="true">5</span><h2 id="h-s5">Hosting and Cloud Storage</h2><svg class="i chev" aria-hidden="true"><use href="#i-chev"/></svg></summary>
+      <div class="body">
+        <p>The developer plans to run the bot on DigitalOcean and to keep uploaded files in Backblaze B2 cloud storage. If these services are actually deployed and used, they may process technical data and stored content on the developer's behalf, under their own terms and privacy policies.</p>
+        <div class="note warn"><p><strong>Planned, not confirmed.</strong> Nothing in this section states that these services have been purchased, activated or deployed. The bot must not be understood to have 15 TB of active storage unless that capacity has actually been provisioned.</p></div>
+
+        <h3>Planned Hosting &amp; Cloud Storage Budget</h3>
+        <div class="cards">
+          <article class="price-card">
+            <span class="badge">Planned, not confirmed active</span>
+            <svg class="i" aria-hidden="true" style="color:var(--btn-bg)"><use href="#i-server"/></svg>
+            <h4>Application hosting</h4>
+            <p class="cfg">Provider: DigitalOcean Droplets<br>Planned configuration: Basic Droplet, 2 vCPU, 2 GB RAM, 50 GB SSD</p>
+            <p class="amt">$12 <small>/ month</small></p>
+            <p class="inr">About ₹1,152 / month (illustrative)</p>
+            <a class="btn btn-sm" href="https://www.digitalocean.com/pricing/droplets" target="_blank" rel="noopener noreferrer">Official pricing<svg class="i" aria-hidden="true" style="width:16px;height:16px"><use href="#i-ext"/></svg></a>
+          </article>
+          <article class="price-card">
+            <span class="badge">Planned, not confirmed active</span>
+            <svg class="i" aria-hidden="true" style="color:var(--btn-bg)"><use href="#i-cloud"/></svg>
+            <h4>Cloud file storage</h4>
+            <p class="cfg">Provider: Backblaze B2 Cloud Storage<br>Planned capacity: 15 TB</p>
+            <p class="amt">$104.25 <small>/ month</small></p>
+            <p class="inr">About ₹10,008 / month (illustrative)</p>
+            <a class="btn btn-sm" href="https://www.backblaze.com/cloud-storage/pricing" target="_blank" rel="noopener noreferrer">Official pricing<svg class="i" aria-hidden="true" style="width:16px;height:16px"><use href="#i-ext"/></svg></a>
+          </article>
+          <article class="price-card total">
+            <span class="badge">Estimate only</span>
+            <h4>Estimated combined budget</h4>
+            <p class="amt">$116.25 <small>/ month</small></p>
+            <p class="inr">About ₹11,160 / month</p>
+            <p class="amt">$1,395 <small>/ year</small></p>
+            <p class="inr">About ₹133,920 / year</p>
+          </article>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <caption>Budget summary at an illustrative rate of $1 = ₹96</caption>
+            <thead><tr><th scope="col">Item</th><th scope="col">Monthly (USD)</th><th scope="col">Monthly (INR)</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">DigitalOcean Droplet</th><td>$12.00</td><td>₹1,152</td></tr>
+              <tr><th scope="row">Backblaze B2, 15 TB</th><td>$104.25</td><td>₹10,008</td></tr>
+              <tr><th scope="row">Combined, monthly</th><td>$116.25</td><td>₹11,160</td></tr>
+              <tr><th scope="row">Combined, annual</th><td>$1,395.00</td><td>₹133,920</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p>These figures are planning estimates, not invoices. Actual charges may differ because of exchange rates, taxes, bandwidth, API requests, extra resources and changes to the providers' pricing. Plan names and specifications can also change, so confirm the current plan and price on each official pricing page:</p>
+        <ul>
+          <li><a href="https://www.digitalocean.com/pricing/droplets" target="_blank" rel="noopener noreferrer">DigitalOcean Droplet pricing</a></li>
+          <li><a href="https://www.backblaze.com/cloud-storage/pricing" target="_blank" rel="noopener noreferrer">Backblaze B2 pricing</a></li>
+        </ul>
+      </div>
+    </details></section>
+
+    <!-- 6 -->
+    <section class="sec" id="s6" aria-labelledby="h-s6"><details open>
+      <summary><span class="num" aria-hidden="true">6</span><h2 id="h-s6">Storage Architecture</h2><svg class="i chev" aria-hidden="true"><use href="#i-chev"/></svg></summary>
+      <div class="body">
+        <p>A Telegram bot of this kind can keep different kinds of data in different places. The separation described here is a possible design, not a description of what is running today.</p>
+        <dl>
+          <dt>Application hosting</dt><dd>The server that runs the bot's code and talks to Telegram.</dd>
+          <dt>Database records</dt><dd>Structured records such as user IDs, profile fields, post status, moderation notes and settings.</dd>
+          <dt>Uploaded media</dt><dd>Photos, videos and files submitted by users, which may be kept in cloud object storage.</dd>
+          <dt>Private storage</dt><dd>Content that is not meant to be public, such as pending submissions, reports and administrative records.</dd>
+          <dt>Publicly published content</dt><dd>Approved posts or media that are shown in a Telegram channel or similar public place.</dd>
+          <dt>Backups and logs</dt><dd>Copies of data kept for recovery, and technical logs kept for troubleshooting and security.</dd>
+        </dl>
+        <div class="note"><p>Only the components the developer has actually configured should be treated as operational.</p></div>
+      </div>
+    </details></section>
+
+    <!-- 7 -->
+    <section class="sec" id="s7" aria-labelledby="h-s7"><details open>
+      <summary><span class="num" aria-hidden="true">7</span><h2 id="h-s7">Data Security</h2><svg class="i chev" aria-hidden="true"><use href="#i-chev"/></svg></summary>
+      <div class="body">
+        <p>The developer aims to apply reasonable security practices, including:</p>
+        <ul>
+          <li>limiting administrative access to people who need it;</li>
+          <li>protecting the bot token, API keys and other credentials, and not publishing them;</li>
+          <li>using private storage for content that should not be public;</li>
+          <li>keeping software and dependencies up to date;</li>
+          <li>applying access controls to servers, storage and admin tools;</li>
+          <li>monitoring errors and unusual activity;</li>
+          <li>testing recovery from backups, where backups exist.</li>
+        </ul>
+        <div class="note warn"><p>No system is perfectly secure. We cannot guarantee that information will never be lost, accessed or disclosed without authorisation.</p></div>
+      </div>
+    </details></section>
+
+    <!-- 8 -->
+    <section class="sec" id="s8" aria-labelledby="h-s8"><details open>
+      <summary><span class="num" aria-hidden="true">8</span><h2 id="h-s8">Sharing and Disclosure</h2><svg class="i chev" aria-hidden="true"><use href="#i-chev"/></svg></summary>
+      <div class="body">
+        <p>Information may be shared or disclosed:</p>
+        <ul>
+          <li><strong>With Telegram,</strong> because the bot works through the Telegram platform;</li>
+          <li><strong>With infrastructure providers</strong> that are actually used to host or store data;</li>
+          <li><strong>When you ask for publication,</strong> for example when you submit a post that is then published;</li>
+          <li><strong>When legally required,</strong> such as in response to a valid legal request;</li>
+          <li><strong>To investigate abuse</strong> or protect the security of the bot, its users and its administrators.</li>
+        </ul>
+        <p>Personal information is not intended to be sold.</p>
+        <p>External services are involved: Telegram always, and hosting or storage providers once they are in use. This policy does not claim that no third parties process data.</p>
+      </div>
+    </details></section>
+
+    <!-- 9 -->
+    <section class="sec" id="s9" aria-labelledby="h-s9"><details open>
+      <summary><span class="num" aria-hidden="true">9</span><h2 id="h-s9">Public Posts and Media</h2><svg class="i chev" aria-hidden="true"><use href="#i-chev"/></svg></summary>
+      <div class="body">
+        <p>Posts, photos, videos and captions that are approved and published may become visible to anyone who can see the channel or place where they appear. Once something is public, others may copy, save or share it.</p>
+        <div class="note warn">
+          <p><strong>Before you submit:</strong> do not send confidential information, and do not send another person's private content, photo or video unless you have appropriate permission.</p>
+        </div>
+        <p>Deleting your original Telegram message may not delete a separate copy that the bot has stored. To ask for removal of stored or published content, contact the developer as described in Section 12.</p>
+      </div>
+    </details></section>
+
+    <!-- 10 -->
+    <section class="sec" id="s10" aria-labelledby="h-s10"><details open>
+      <summary><span class="num" aria-hidden="true">10</span><h2 id="h-s10">Cookies and Tracking</h2><svg class="i chev" aria-hidden="true"><use href="#i-chev"/></svg></summary>
+      <div class="body">
+        <p>This website is a single static page. It does not set cookies, and it contains no analytics, advertising trackers, social media widgets, third-party scripts, remote fonts or remote images.</p>
+        <h3>Theme preference</h3>
+        <p>If you press the theme button, the page saves your light or dark choice in your browser's local storage so it can be applied next time. This stays on your device, is not sent to us, and can be removed by clearing site data in your browser. If storage is blocked, the page still works and simply does not remember your choice.</p>
+        <h3>What this does not cover</h3>
+        <p>The service that delivers this page to you may keep ordinary technical logs, such as IP address, time and browser type, under its own policies. The developer does not add any tracking to this page. Links to Telegram and other sites leave this website and are covered by those sites' policies (see Section 15).</p>
+      </div>
+    </details></section>
+
+    <!-- 11 -->
+    <section class="sec" id="s11" aria-labelledby="h-s11"><details open>
+      <summary><span class="num" aria-hidden="true">11</span><h2 id="h-s11">Data Retention</h2><svg class="i chev" aria-hidden="true"><use href="#i-chev"/></svg></summary>
+      <div class="body">
+        <p>Information should be kept only as long as reasonably necessary for the purposes in Section 3, and subject to legal and operational requirements.</p>
+        <ul>
+          <li><strong>Records and media</strong> may be kept while a feature, post or profile is active, or while needed to handle a report or dispute.</li>
+          <li><strong>Logs</strong> may be kept for a limited time for troubleshooting and security.</li>
+          <li><strong>Backups,</strong> where they exist, may keep older copies until they are replaced or removed, so deleted data may remain in a backup for a while.</li>
+        </ul>
+        <p>No fixed retention periods are stated here because none have been configured. If specific periods are set, they will be added to this section.</p>
+      </div>
+    </details></section>
+
+    <!-- 12 -->
+    <section class="sec" id="s12" aria-labelledby="h-s12"><details open>
+      <summary><span class="num" aria-hidden="true">12</span><h2 id="h-s12">Data Access and Deletion Requests</h2><svg class="i chev" aria-hidden="true"><use href="#i-chev"/></svg></summary>
+      <div class="body">
+        <p>Where the law gives you the right, you may ask to access, correct or delete information the bot holds about you.</p>
+        <h3>How to ask</h3>
+        <p>Send a message to the developer on Telegram: <a href="https://t.me/Sahin_09022" target="_blank" rel="noopener noreferrer">@Sahin_09022</a>. Say what you are asking for, and include the Telegram username or ID you used with the bot, and, for a removal request, what content you mean.</p>
+        <h3>What to expect</h3>
+        <ul>
+          <li>We may need to verify that you are the person the information relates to before acting.</li>
+          <li>Some records may have to be kept where the law requires it, or where needed to deal with abuse or a dispute.</li>
+          <li>Content already shared in a public channel may need to be removed there as well as from the bot's own storage.</li>
+        </ul>
+        <div class="contact-actions js-only"><button type="button" class="btn btn-sm" data-copy="contact"><svg class="i" aria-hidden="true"><use href="#i-copy"/></svg>Copy contact link</button></div>
+      </div>
+    </details></section>
+
+    <!-- 13 -->
+    <section class="sec" id="s13" aria-labelledby="h-s13"><details open>
+      <summary><span class="num" aria-hidden="true">13</span><h2 id="h-s13">Children's Privacy</h2><svg class="i chev" aria-hidden="true"><use href="#i-chev"/></svg></summary>
+      <div class="body">
+        <p>Please do not submit unnecessary personal information about children, including photos, names, schools or locations.</p>
+        <p>Parents and guardians who have a privacy concern can contact the developer on Telegram at <a href="https://t.me/Sahin_09022" target="_blank" rel="noopener noreferrer">@Sahin_09022</a>, say which content or account is involved, and ask for it to be reviewed or removed. We may ask for details that help us confirm the request.</p>
+        <p>This policy does not set an age limit and does not claim the bot enforces one. Telegram has its own rules about who may use its service.</p>
+      </div>
+    </details></section>
+
+    <!-- 14 -->
+    <section class="sec" id="s14" aria-labelledby="h-s14"><details open>
+      <summary><span class="num" aria-hidden="true">14</span><h2 id="h-s14">International Data Processing</h2><svg class="i chev" aria-hidden="true"><use href="#i-chev"/></svg></summary>
+      <div class="body">
+        <p>Telegram and any hosting or storage provider used by the bot may process information in locations that their services determine, under their own arrangements and applicable law.</p>
+        <p>This policy does not state where servers are located and does not claim that data stays only in India.</p>
+      </div>
+    </details></section>
+
+    <!-- 15 -->
+    <section class="sec" id="s15" aria-labelledby="h-s15"><details open>
+      <summary><span class="num" aria-hidden="true">15</span><h2 id="h-s15">Third-Party Links and Services</h2><svg class="i chev" aria-hidden="true"><use href="#i-chev"/></svg></summary>
+      <div class="body">
+        <p>Telegram links and other external sites are governed by their own policies, which may differ from this one.</p>
+        <ul>
+          <li><a href="https://telegram.org/privacy" target="_blank" rel="noopener noreferrer">Telegram Privacy Policy</a></li>
+          <li><a href="https://www.digitalocean.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer">DigitalOcean Privacy Policy</a></li>
+          <li><a href="https://www.backblaze.com/company/privacy" target="_blank" rel="noopener noreferrer">Backblaze Privacy Policy</a></li>
+        </ul>
+        <p>The DigitalOcean and Backblaze policies matter only where that provider is actually used. Listing them here is not a statement that the services are already active.</p>
+      </div>
+    </details></section>
+
+    <!-- 16 -->
+    <section class="sec" id="s16" aria-labelledby="h-s16"><details open>
+      <summary><span class="num" aria-hidden="true">16</span><h2 id="h-s16">Incident Response</h2><svg class="i chev" aria-hidden="true"><use href="#i-chev"/></svg></summary>
+      <div class="body">
+        <p>If unauthorised access to the bot or its data is suspected, the developer intends to:</p>
+        <ul>
+          <li>investigate what happened and what information may be affected;</li>
+          <li>contain the problem, for example by revoking credentials and restricting access;</li>
+          <li>fix the cause and check that the fix works;</li>
+          <li>notify affected people and authorities where applicable law requires it.</li>
+        </ul>
+        <p>This describes an intention. It does not claim any certification, formal programme or specific response time.</p>
+      </div>
+    </details></section>
+
+    <!-- 17 -->
+    <section class="sec" id="s17" aria-labelledby="h-s17"><details open>
+      <summary><span class="num" aria-hidden="true">17</span><h2 id="h-s17">Policy Updates</h2><svg class="i chev" aria-hidden="true"><use href="#i-chev"/></svg></summary>
+      <div class="body">
+        <p>This policy may change when the bot's features, hosting or legal requirements change. Updated versions are published on this page, and the "Last updated" date at the top is changed each time. Where practical, significant changes may also be announced in the bot's Telegram channel.</p>
+        <p>Please check this page from time to time.</p>
+      </div>
+    </details></section>
+
+    <!-- 18 -->
+    <section class="sec" id="s18" aria-labelledby="h-s18"><details open>
+      <summary><span class="num" aria-hidden="true">18</span><h2 id="h-s18">Contact Information</h2><svg class="i chev" aria-hidden="true"><use href="#i-chev"/></svg></summary>
+      <div class="body">
+        <div class="contact-card">
+          <dl>
+            <dt>Developer</dt><dd>Sahin</dd>
+            <dt>Telegram</dt><dd><a href="https://t.me/Sahin_09022" target="_blank" rel="noopener noreferrer">@Sahin_09022</a></dd>
+            <dt>Contact URL</dt><dd><a href="https://t.me/Sahin_09022" target="_blank" rel="noopener noreferrer">https://t.me/Sahin_09022</a></dd>
+            <dt>Project</dt><dd>Ghosh Bari Park Bot</dd>
+            <dt>Park location</dt><dd>Gulai Chandi, Basirhat, North 24 Parganas, West Bengal, India</dd>
+            <dt>Bot</dt><dd><a href="https://t.me/GhoshBariParkBot" target="_blank" rel="noopener noreferrer">https://t.me/GhoshBariParkBot</a></dd>
+            <dt>Channel</dt><dd><a href="https://t.me/Ghosh_Bari_Park" target="_blank" rel="noopener noreferrer">https://t.me/Ghosh_Bari_Park</a></dd>
+          </dl>
+          <div class="contact-actions js-only">
+            <button type="button" class="btn btn-primary btn-sm" data-copy="contact"><svg class="i" aria-hidden="true"><use href="#i-copy"/></svg>Copy contact link</button>
+            <button type="button" class="btn btn-sm" data-copy="policy"><svg class="i" aria-hidden="true"><use href="#i-copy"/></svg>Copy policy link</button>
+          </div>
+        </div>
+        <p>Please use Telegram to get in touch. Do not post private phone numbers, addresses or other confidential details in your message.</p>
+      </div>
+    </details></section>
+
+    <!-- 19 -->
+    <section class="sec" id="s19" aria-labelledby="h-s19"><details open>
+      <summary><span class="num" aria-hidden="true">19</span><h2 id="h-s19">Independent Project Disclaimer</h2><svg class="i chev" aria-hidden="true"><use href="#i-chev"/></svg></summary>
+      <div class="body">
+        <p>Ghosh Bari Park Bot is not necessarily an official park management service. It must not be represented as officially authorised unless that authorisation has been obtained. If it is obtained, this policy will say so.</p>
+      </div>
+    </details></section>
+
+    <!-- 20 -->
+    <section class="sec" id="s20" aria-labelledby="h-s20"><details open>
+      <summary><span class="num" aria-hidden="true">20</span><h2 id="h-s20">Policy Accuracy</h2><svg class="i chev" aria-hidden="true"><use href="#i-chev"/></svg></summary>
+      <div class="body">
+        <p>This policy must accurately reflect the bot's deployed code, its actual data collection, storage, retention and deletion procedures. The developer should review it whenever those change and correct anything that is no longer true.</p>
+        <p>If you notice a statement that does not match how the bot behaves, please tell us through the contact details in Section 18. This page is general information and is not legal advice.</p>
+      </div>
+    </details></section>
+
+    <div id="no-results" class="empty" hidden>
+      <p><strong>No sections match your search.</strong></p>
+      <p>Try a shorter or different word, or clear the search to see the whole policy.</p>
+    </div>
+  </main>
+</div>
+
+<footer class="site-footer">
+  <div class="wrap cols">
+    <div>
+      <h2>Ghosh Bari Park Bot</h2>
+      <p>Ghosh Bari Park Bot is an independent project and is not necessarily an official park management service. Policy last updated <time datetime="2026-10-13">13 October 2026</time>.</p>
+      <p>Developer: Sahin. Gulai Chandi, Basirhat, North 24 Parganas, West Bengal, India.</p>
+    </div>
+    <div>
+      <h2>Links</h2>
+      <ul>
+        <li><a href="https://t.me/Sahin_09022" target="_blank" rel="noopener noreferrer">Contact the developer on Telegram</a></li>
+        <li><a href="https://t.me/GhoshBariParkBot" target="_blank" rel="noopener noreferrer">Ghosh Bari Park Bot</a></li>
+        <li><a href="https://t.me/Ghosh_Bari_Park" target="_blank" rel="noopener noreferrer">Ghosh Bari Park channel</a></li>
+        <li><a href="#top">Back to top</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<button type="button" id="to-top" class="to-top js-only" aria-label="Back to top"><svg class="i" aria-hidden="true"><use href="#i-up"/></svg></button>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+<script>
+(function () {
+  'use strict';
+
+  /* ===== CONFIGURATION: edit here after you publish =====
+     PUBLIC_URL: your real public address, e.g. the GitHub Pages or Vercel URL.
+     Leave it empty to use whatever address the page is opened from. */
+  var CONFIG = {
+    PUBLIC_URL: '',
+    CONTACT_URL: 'https://t.me/Sahin_09022'
+  };
+  /* ===================================================== */
+
+  var doc = document, root = doc.documentElement;
+  function $(s, c) { return (c || doc).querySelector(s); }
+  function $$(s, c) { return Array.prototype.slice.call((c || doc).querySelectorAll(s)); }
+  var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* ---------- storage that fails safely ---------- */
+  function store(k, v) { try { localStorage.setItem(k, v); return true; } catch (e) { return false; } }
+
+  /* ---------- policy URL, canonical and og:url ---------- */
+  function policyUrl() {
+    if (CONFIG.PUBLIC_URL) { return CONFIG.PUBLIC_URL; }
+    return window.location.href.split('#')[0].split('?')[0];
+  }
+  (function setCanonical() {
+    var url = policyUrl();
+    if (!/^https?:/i.test(url)) { return; }
+    var link = doc.createElement('link');
+    link.rel = 'canonical';
+    link.href = url;
+    doc.head.appendChild(link);
+    var og = $('#og-url');
+    if (og) { og.setAttribute('content', url); }
+  })();
+
+  /* ---------- toast ---------- */
+  var toast = $('#toast'), toastTimer;
+  function say(msg) {
+    toast.textContent = msg;
+    toast.classList.add('show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function () { toast.classList.remove('show'); }, 3200);
+  }
+
+  /* ---------- theme ---------- */
+  var themeBtn = $('#theme-toggle'), themeMeta = $('meta[name="theme-color"]');
+  function applyTheme(t) {
+    root.setAttribute('data-theme', t);
+    themeBtn.setAttribute('aria-pressed', t === 'dark' ? 'true' : 'false');
+    themeBtn.setAttribute('aria-label', 'Dark theme');
+    themeBtn.title = t === 'dark' ? 'Switch to light theme' : 'Switch to dark theme';
+    if (themeMeta) { themeMeta.setAttribute('content', t === 'dark' ? '#0b1c12' : '#123824'); }
+  }
+  applyTheme(root.getAttribute('data-theme') === 'dark' ? 'dark' : 'light');
+  themeBtn.addEventListener('click', function () {
+    var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    applyTheme(next);
+    store('gbp-theme', next);
+  });
+
+  /* ---------- copy buttons (Clipboard API with fallback) ---------- */
+  function legacyCopy(text) {
+    return new Promise(function (resolve, reject) {
+      var ta = doc.createElement('textarea');
+      ta.value = text;
+      ta.setAttribute('readonly', '');
+      ta.style.cssText = 'position:fixed;top:-1000px;left:0;opacity:0';
+      doc.body.appendChild(ta);
+      ta.select();
+      ta.setSelectionRange(0, text.length);
+      var ok = false;
+      try { ok = doc.execCommand('copy'); } catch (e) { ok = false; }
+      doc.body.removeChild(ta);
+      if (ok) { resolve(); } else { reject(new Error('copy failed')); }
+    });
+  }
+  function copyText(text) {
+    if (navigator.clipboard && window.isSecureContext) {
+      return navigator.clipboard.writeText(text).catch(function () { return legacyCopy(text); });
+    }
+    return legacyCopy(text);
+  }
+  $$('[data-copy]').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var kind = btn.getAttribute('data-copy');
+      var text = kind === 'contact' ? CONFIG.CONTACT_URL : policyUrl();
+      var label = kind === 'contact' ? 'Contact link' : 'Policy link';
+      copyText(text).then(function () {
+        say(label + ' copied.');
+      }, function () {
+        say('Could not copy automatically. Please copy this link: ' + text);
+      });
+    });
+  });
+
+  /* ---------- sections, expand / collapse ---------- */
+  var sections = $$('.sec');
+  var tocItems = $$('#toc-list li');
+  function det(s) { return $('details', s); }
+  function setAll(open) {
+    sections.forEach(function (s) { if (!s.hidden) { det(s).open = open; } });
+  }
+  $('#expand-all').addEventListener('click', function () { setAll(true); say('All visible sections expanded.'); });
+  $('#collapse-all').addEventListener('click', function () { setAll(false); say('All visible sections collapsed.'); });
+  $('#print-btn').addEventListener('click', function () { window.print(); });
+
+  /* open the section a link or address points to */
+  function openFromHash() {
+    var id = '';
+    try { id = decodeURIComponent(window.location.hash.slice(1)); } catch (e) { return; }
+    if (!id) { return; }
+    var el = doc.getElementById(id);
+    if (!el) { return; }
+    var d = el.matches('details') ? el : $('details', el);
+    if (d) { d.open = true; }
+  }
+  window.addEventListener('hashchange', openFromHash);
+  openFromHash();
+
+  /* print: open everything for the printout, then restore */
+  var printState = null;
+  function beforePrint() {
+    if (printState) { return; }
+    printState = sections.map(function (s) { return det(s).open; });
+    sections.forEach(function (s) { det(s).open = true; });
+  }
+  function afterPrint() {
+    if (!printState) { return; }
+    sections.forEach(function (s, i) { det(s).open = printState[i]; });
+    printState = null;
+  }
+  window.addEventListener('beforeprint', beforePrint);
+  window.addEventListener('afterprint', afterPrint);
+
+  /* ---------- search ---------- */
+  var input = $('#search'), clearBtn = $('#search-clear'), statusEl = $('#search-status'), noResults = $('#no-results');
+  var savedOpen = null, searchTimer;
+
+  function clearMarks() {
+    $$('mark.hl').forEach(function (m) {
+      var p = m.parentNode;
+      p.replaceChild(doc.createTextNode(m.textContent), m);
+      p.normalize();
+    });
+  }
+  function escapeRe(s) { return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); }
+  function highlight(container, re) {
+    var walker = doc.createTreeWalker(container, NodeFilter.SHOW_TEXT, {
+      acceptNode: function (n) {
+        if (!n.nodeValue.trim()) { return NodeFilter.FILTER_REJECT; }
+        var p = n.parentNode;
+        if (p && p.closest && p.closest('script,style,mark')) { return NodeFilter.FILTER_REJECT; }
+        return NodeFilter.FILTER_ACCEPT;
+      }
+    });
+    var nodes = [];
+    while (walker.nextNode()) { nodes.push(walker.currentNode); }
+    nodes.forEach(function (n) {
+      var text = n.nodeValue, last = 0, m, found = false;
+      var frag = doc.createDocumentFragment();
+      re.lastIndex = 0;
+      while ((m = re.exec(text)) !== null) {
+        if (!m[0].length) { re.lastIndex++; continue; }
+        found = true;
+        if (m.index > last) { frag.appendChild(doc.createTextNode(text.slice(last, m.index))); }
+        var mk = doc.createElement('mark');
+        mk.className = 'hl';
+        mk.textContent = m[0];
+        frag.appendChild(mk);
+        last = m.index + m[0].length;
+      }
+      if (!found) { return; }
+      if (last < text.length) { frag.appendChild(doc.createTextNode(text.slice(last))); }
+      n.parentNode.replaceChild(frag, n);
+    });
+  }
+  function runSearch() {
+    var q = input.value.trim();
+    clearBtn.hidden = !input.value;
+    clearMarks();
+    var terms = q.toLowerCase().split(/\s+/).filter(function (t) { return t.length > 1; });
+    if (!terms.length) {
+      sections.forEach(function (s, i) { s.hidden = false; tocItems[i].hidden = false; });
+      if (savedOpen) {
+        sections.forEach(function (s) { det(s).open = !!savedOpen[s.id]; });
+        savedOpen = null;
+      }
+      statusEl.textContent = q ? 'Type at least two letters.' : '';
+      noResults.hidden = true;
+      return;
+    }
+    if (!savedOpen) {
+      savedOpen = {};
+      sections.forEach(function (s) { savedOpen[s.id] = det(s).open; });
+    }
+    var re = new RegExp(terms.map(escapeRe).join('|'), 'gi');
+    var count = 0;
+    sections.forEach(function (s, i) {
+      var text = s.textContent.toLowerCase();
+      var ok = terms.every(function (t) { return text.indexOf(t) > -1; });
+      s.hidden = !ok;
+      tocItems[i].hidden = !ok;
+      if (ok) { count++; det(s).open = true; highlight(s, re); }
+    });
+    statusEl.textContent = count ? (count + ' of ' + sections.length + ' sections match') : 'No sections match';
+    noResults.hidden = count > 0;
+  }
+  input.addEventListener('input', function () {
+    clearTimeout(searchTimer);
+    searchTimer = setTimeout(runSearch, 120);
+  });
+  input.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && input.value) { input.value = ''; runSearch(); e.stopPropagation(); }
+  });
+  clearBtn.addEventListener('click', function () { input.value = ''; runSearch(); input.focus(); });
+  doc.addEventListener('keydown', function (e) {
+    var t = e.target, tag = t && t.tagName;
+    if (e.key === '/' && !e.ctrlKey && !e.metaKey && !e.altKey && tag !== 'INPUT' && tag !== 'TEXTAREA' && !(t && t.isContentEditable)) {
+      if (window.matchMedia('(min-width: 960px)').matches) { e.preventDefault(); input.focus(); }
+    }
+  });
+
+  /* ---------- mobile drawer ---------- */
+  var menuBtn = $('#menu-btn'), sidebar = $('#sidebar'), scrim = $('#scrim');
+  function setDrawer(open) {
+    sidebar.classList.toggle('open', open);
+    scrim.classList.toggle('open', open);
+    menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  }
+  menuBtn.addEventListener('click', function () {
+    var open = !sidebar.classList.contains('open');
+    setDrawer(open);
+    if (open) { input.focus(); }
+  });
+  scrim.addEventListener('click', function () { setDrawer(false); });
+  $$('#toc-list a').forEach(function (a) { a.addEventListener('click', function () { setDrawer(false); }); });
+  doc.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && sidebar.classList.contains('open')) { setDrawer(false); menuBtn.focus(); }
+  });
+  window.addEventListener('resize', function () {
+    if (window.matchMedia('(min-width: 960px)').matches) { setDrawer(false); }
+  });
+
+  /* ---------- reading progress and back-to-top ---------- */
+  var bar = $('#progress-bar'), toTop = $('#to-top'), ticking = false;
+  function onScroll() {
+    var h = root, max = h.scrollHeight - h.clientHeight;
+    var p = max > 0 ? Math.min(1, Math.max(0, h.scrollTop / max)) : 0;
+    bar.style.transform = 'scaleX(' + p + ')';
+    toTop.classList.toggle('show', h.scrollTop > 600);
+    ticking = false;
+  }
+  window.addEventListener('scroll', function () {
+    if (!ticking) { ticking = true; window.requestAnimationFrame(onScroll); }
+  }, { passive: true });
+  window.addEventListener('resize', onScroll);
+  onScroll();
+  toTop.addEventListener('click', function () {
+    window.scrollTo({ top: 0, behavior: reduceMotion ? 'auto' : 'smooth' });
+    doc.body.focus({ preventScroll: true });
+  });
+
+  /* ---------- highlight the current section in the contents ---------- */
+  if ('IntersectionObserver' in window) {
+    var links = {};
+    $$('#toc-list a').forEach(function (a) { links[a.getAttribute('href').slice(1)] = a; });
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (en.isIntersecting) {
+          Object.keys(links).forEach(function (k) { links[k].removeAttribute('aria-current'); });
+          if (links[en.target.id]) { links[en.target.id].setAttribute('aria-current', 'true'); }
+        }
+      });
+    }, { rootMargin: '-15% 0px -75% 0px', threshold: 0 });
+    sections.forEach(function (s) { io.observe(s); });
+  }
+})();
+</script>
+</body>
+</html>
